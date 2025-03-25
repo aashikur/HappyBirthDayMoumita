@@ -147,7 +147,6 @@
 
 img {
     width: 100%;
-    display: block;
     height: auto;
 }
 
@@ -186,7 +185,7 @@ img {
 
 @media (prefers-reduced-motion: no-preference) {
     .block-carousel[data-animated="true"] .carousel-items {
-        animation-duration: 10s;
+        animation-duration: 60s;
         animation-iteration-count: infinite;
         animation-name: scroll;
         animation-timing-function: linear;
@@ -205,3 +204,23 @@ ul li:nth-child(even) {
 ul li:nth-child(odd) {
     transform: rotate(-2deg) !important;
 }
+
+
+
+
+
+.wish{
+    /* margin-inline: auto; */
+    overflow: hidden;;
+    white-space: nowrap;
+    animation: typing 3s steps(22) forwards;}
+
+@keyframes typing {
+    0%{
+        width:0%
+    }
+    100%{
+        width: 100%;
+    }
+}
+
