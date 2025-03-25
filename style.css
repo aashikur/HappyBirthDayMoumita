@@ -1,0 +1,256 @@
+.animated-box {
+    position: absolute; /* or fixed, depending on your requirement */
+
+    bottom: 0;
+    animation: fly 6s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        bottom: -10%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+    
+        transform: rotate(-1deg);
+
+    }
+    100% {
+        bottom: 100%;
+        transform: rotate(90deg);
+
+    }
+}
+.animated-box0 {
+    position: absolute; /* or fixed, depending on your requirement */
+
+    bottom: -10%;
+    animation: fly 6s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes fly0 {
+    0% {
+        bottom: -10%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+    
+        transform: rotate(-1deg);
+
+    }
+    100% {
+        bottom: 100%;
+        transform: rotate(90deg);
+
+    }
+}
+
+
+.animated-box2 {
+    position: absolute; /* or fixed, depending on your requirement */
+
+    bottom: 0;
+    animation: fly2 4s linear infinite;
+}
+
+@keyframes fly2 {
+    0% {
+        bottom: -10%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+    
+        transform: rotate(-1deg);
+
+    }
+    100% {
+        bottom: 100%;
+        transform: rotate(90deg);
+
+    }
+}
+
+
+
+
+
+
+
+.animated-box3 {
+    position: absolute; /* or fixed, depending on your requirement */
+
+    bottom: 0;
+    animation: fly2 7s linear infinite;
+    right: 0;
+}
+
+@keyframes fly3 {
+    0% {
+        bottom: -10%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+    
+        transform: rotate(-1deg);
+
+    }
+    100% {
+        bottom: 100%;
+        transform: rotate(90deg);
+
+    }
+}
+
+
+/* ============================================  */
+.animate-pop{
+    animation: topup .4s ease-out
+}
+@keyframes topup {
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.animate-pop2{
+    animation: topup2 1s ease-out;
+
+}
+@keyframes topup2 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(20%);
+
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+ 
+}
+
+
+
+
+
+
+/* slider  */
+
+ :root {
+	 --color-crater-brown: #ffffff;
+	 --color-gondola: #ffffff;
+	 --color-ecru-white: #fff;
+	 --color-bizarre: #fff;
+	 --color-hampton: #fff;
+	 --color-muddy-waters: #fff;
+	 --color-fuel-yellow: #fff;
+	 --spacing-container-padding-block: 2rem;
+	 --spacing-container-padding-inline: 2rem;
+	 --spacing-container-padding-inline-large: 4rem;
+ }
+ @media (max-width: 1590px) {
+	 :root {
+		 --spacing-container-padding-inline: 4rem;
+	}
+}
+ @media (max-width: 743px) {
+	 :root {
+		 --spacing-container-padding-inline: 3rem;
+	}
+}
+ *, *::before, *::after {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+}
+ img {
+	 width: 100%;
+	 display: block;
+	 height: auto;
+}
+
+
+ .card {
+	 /* color: var(--color-gondola); */
+	 background-color: var(--color-ecru-white);
+	 padding: 1rem;
+	 border-radius: 0.25rem;
+	 pointer-events: auto;
+	 /* max-height: 50vh; */
+}
+ .image-content {
+	 /* margin-bottom: 1.5rem; */
+	 border-radius: 0.25rem;
+	 overflow: hidden;
+}
+
+ .block-carousel {
+	 overflow: hidden;
+	 pointer-events: none;
+} 
+  @media (prefers-reduced-motion: reduce) {
+	 .block-carousel[data-animated="true"] {
+		 overflow: visible;
+	}
+} 
+ .block-carousel .carousel-items {
+	 list-style: none;
+	 /* align-items: start; */
+	 display: grid;
+	 gap: .5rem;
+	 grid-auto-columns: 20rem;
+	 grid-auto-flow: column;
+	 /* padding-bottom: var(--spacing-container-padding-block); */
+}
+ @media (max-width: 600px) {
+	 .block-carousel .carousel-items {
+		 gap: 2rem;
+	}
+}
+ @media (min-width: 1133px) {
+	 .block-carousel .carousel-items {
+		 grid-auto-columns: 30rem;
+	}
+}
+
+
+ @media (prefers-reduced-motion: reduce) {
+	 .block-carousel .carousel-items {
+		 overflow: visible;
+		 overflow-x: scroll;
+	}
+}
+ .block-carousel[data-animated="true"] .carousel-items:hover, .block-carousel[data-animated="true"] .carousel-items:focus {
+	 animation-play-state: paused;
+}
+ @media (prefers-reduced-motion: no-preference) {
+	 .block-carousel[data-animated="true"] .carousel-items {
+		 animation-duration: 20s;
+		 animation-iteration-count: infinite;
+		 animation-name: scroll;
+		 animation-timing-function: linear;
+		 width: max-content;
+	}
+}
+ @keyframes scroll {
+	 to {
+		 transform: translate(calc(-50% - .5rem));
+	}
+}
+ 
