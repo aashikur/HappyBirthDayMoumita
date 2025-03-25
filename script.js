@@ -32,7 +32,8 @@ prefersReducedMotion.addEventListener('change', (e) => handleCarouselState(e.mat
 
 
 
-function first(){
+document.getElementById('F_btn').addEventListener('click',()=>{
+
     const first = document.getElementById('first');
     const secound = document.getElementById('secound');
     const secondBtn = document.getElementById('secondBtn');
@@ -48,7 +49,9 @@ function first(){
         secondBtn.classList.remove('hidden');
         secondBtn.classList.add('animate-pop2');
      },10)
-}
+
+}) 
+
 
 
 function second(){
