@@ -172,9 +172,10 @@ function Random(){
     "Every single good thing and bad thing will lead you to where you're meant to be",
     "Sometimes, you need to listen to your own advice. You always know what to do but can't decide.",
     "You will understand the true meaning of life when reality hits you.",
+    "Time doesn't heal any pain; it just makes you strong enough to bear it with a smile."
 
   ];
 
-  console.log(motivationalWishes.length)
+  console.log(randomNumber)
   thisText.innerHTML = motivationalWishes[randomNumber];
 }
