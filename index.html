@@ -39,14 +39,14 @@
                 <li class="card p-2 rounded-lg">
                     <div class="image-content ">
                         <img class=" rounded-lg " src="img-m/01.jpg" alt="">
-                        <p class="text-center  text-[#c958b5] py-1">Real Beautiful is in soul</p>
+                        <p class="text-center  text-[#c958b5] py-1">Sweetly humble</p>
                     </div>
                 </li>
 
                 <li class="card p-2 rounded-lg">
                     <div class="image-content ">
                         <img class=" rounded-lg " src="img-m/02.jpg" alt="">
-                        <p class="text-center  text-[#c958b5] py-1">Challenges make you stronger</p>
+                        <p class="text-center  text-[#c958b5] py-1">Quiet charm</p>
                     </div>
                 </li>
 
@@ -67,12 +67,12 @@
                 <li class="card p-2 rounded-lg">
                     <div class="image-content ">
                         <img class=" rounded-lg " src="img-m/05.jpg" alt="">
-                        <p class="text-center  text-[#c958b5] py-1">Beauty with brain</p>
+                        <p class="text-center  text-[#c958b5] py-1">Soft grace</p>
                     </div>
                 </li>
 
                 <li class="card p-2 rounded-lg">
-                    <div class="image-content ">
+                    <div class="image-content ">       
                         <img class=" rounded-lg " src="img-m/06.jpg" alt="">
                         <p class="text-center  text-[#c958b5] py-1">True beauty are memories</p>
                     </div>
@@ -88,14 +88,14 @@
                 <li class="card p-2 rounded-lg">
                     <div class="image-content ">
                         <img class=" rounded-lg " src="img-m/08.jpg" alt="">
-                        <p class="text-center  text-[#c958b5] py-1">Modesty is turly bleesing</p>
+                        <p class="text-center  text-[#c958b5] py-1">Modesty is bleesing</p>
                     </div>
                 </li>
 
                 <li class="card p-2 rounded-lg">
                     <div class="image-content ">
                         <img class=" rounded-lg " src="img-m/09.jpg" alt="">
-                        <p class="text-center  text-[#c958b5] py-1">Unparallel Looks</p>
+                        <p class="text-center  text-[#c958b5] py-1">Humble glow</p>
                     </div>
                 </li>
 
@@ -118,7 +118,7 @@
         <div class="flex justify-center">
             <button  id="secondBtn" onclick="second()"
             class="hidden mt-8 cursor-pointer px-8 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full text-lg shadow-md hover:bg-pink-600 transition border-2 border-pink-200">
-            There Are More 🚀</button>
+           <span id="counter" class="font-bold"></span><span id="more"> There Are More 🚀</span></button>
         </div>
     </main>
 
@@ -140,7 +140,7 @@
             <img id="cake2" class="" src="https://em-content.zobj.net/source/google/412/birthday-cake_1f382.png" alt="">
 
             <div class="flex justify-center ">
-                <button id="" onclick="cakeEat()" class="btn rounded-full px-10 mt-10 bg-gradient-to-r from-pink-300 to-pink-400 text-white">Let's
+                <button id="" onclick="cakeEat()" class="z-50 hover:opacity-80 animate-pop2  mt-8 cursor-pointer px-8 pr-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full text-lg shadow-md hover:bg-pink-600 transition border-2 border-pink-200">Let's
                     Eat <span class="ml-2">🥄</span></button>
 
             </div>
@@ -150,12 +150,19 @@
 
 
     <!-- Text  -->
-    <div id="sms"
-        class="hidden w-11/12 mx-auto bg-white rounded-md p-5 text-gray-500 text-[18px] z-10 shadow-pink-300 shadow-lg ">
-        <div class="">
+    <div id="sms" class="hidden z-10">
+        <div  class=" w-11/12 max-w-[450px] mx-auto bg-white rounded-md p-5 text-gray-500 text-[18px] z-10 shadow-pink-300 shadow-lg ">
             <p id="text" class="wish font-mono">
                Sweet Cake Owwwww....
             </p>
+        </div>
+        
+        <div class="flex justify-center ">
+            <button id="Random" onclick="Random()" class="hidden z-50 hover:opacity-80 animate-pop2  mt-8 cursor-pointer px-8  py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full text-lg shadow-md hover:bg-pink-600 transition border-2 border-pink-200"> 
+            <span> Random
+            <img  style="width: 30px !important;" class="w-12 inline-block" src="https://em-content.zobj.net/source/google/412/game-die_1f3b2.png" alt="">    
+            </span>    
+            </button>
         </div>
     </div>
 
@@ -167,7 +174,7 @@
     <!-- Floating Items  -->
     <div class="opacity-50 ">
 
-        <div style="left:0%" class="animated-box w-32 h-32 absolute bottom-0">
+        </svg><div style="left:0%" class="animated-box w-32 h-32 absolute bottom-0">
 
             <img src="https://em-content.zobj.net/source/apple/391/balloon_1f388.png" alt="">
         </div>
