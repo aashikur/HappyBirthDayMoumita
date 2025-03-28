@@ -179,3 +179,65 @@ function Random(){
   console.log(randomNumber)
   thisText.innerHTML = motivationalWishes[randomNumber];
 }
+
+
+
+function Starter(){
+  const Date = document.getElementById('Date');
+  const Time = document.getElementById('Time');
+  const Starter  = document.getElementById('Starter');
+
+  console.log(Date.innerText)
+  console.log(Time.innerText)
+  console.log(Starter)
+
+
+  let sec= 57;
+  const timeID = setInterval(()=>{
+    Time.innerHTML = `11 : 59 : ${sec++}`
+  },1000);
+
+
+  setTimeout(() => {
+    clearInterval(timeID);
+    Date.innerHTML = `25-Mar-2025`;
+    Time.innerHTML = `12 : 00 : 00`
+
+    // calling First Section 
+    setTimeout(()=>{
+      Starter.classList.add('hidden');
+     document.getElementById('first').classList.remove('hidden');
+     
+     // Name Decoration 
+      const subName = document.getElementById('SubjectName');
+      setTimeout(()=>{
+        subName.innerHTML = ''
+      },500) 
+
+      setTimeout(()=>{
+        subName.innerHTML = `Fatema`
+      },1000) 
+
+      setTimeout(()=>{
+        subName.innerHTML = `Fatema-Tuj`
+      },1500) 
+
+      setTimeout(()=>{
+        subName.innerHTML = `Fatema-Tuj-Zahura-`
+      },2000) 
+
+      setTimeout(()=>{
+        subName.innerHTML = `Fatema-Tuj-Zahura-Moumita`
+      },3000) 
+
+      
+
+    },1000)
+
+
+  }, 4000);
+
+}
+
+
+Starter();

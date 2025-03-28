@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Card</title>
     <link rel="shortcut icon" href="img-m/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,13 +24,28 @@
         width: 100vw;
         width: 100dvw;
         overflow: hidden;
+        font-family: "Dancing Script", cursive;
+
     }
 </style>
+    <!-- main Form  -->
+    <div id="Starter"
+        class=" backdrop-blur-lg border border-purple-200 bg-white/50 animate-pop p-10 rounded-2xl shadow-lg text-center max-w-sm relative z-10">
+        <h1 class="animate-pop2 text-pink-500 text-4xl lg:text-4xl font-bold">
+            <p id="Date" class="text-2xl mb-3">24-Mar-2025</p>
+            <p id="Time" class="text-4xl">11 : 59 : <span id="">56</span></p>
+        </h1>
+        <img style="width: 150px;" class="mx-auto mt-10" src="https://em-content.zobj.net/source/microsoft-teams/363/birthday-cake_1f382.png"
+        alt="">
+    </div>
+
 
     <!-- main Form  -->
     <div id="first"
-        class=" backdrop-blur-lg border border-purple-200 bg-white/50 animate-pop p-10 rounded-2xl shadow-lg text-center max-w-sm relative z-10">
-        <h1 class="animate-pop2 text-pink-500 text-4xl lg:text-4xl font-bold">Happy Birthday, <br>Tuj-Moumita
+        class="hidden backdrop-blur-lg border border-purple-200 bg-white/50 animate-pop p-10 rounded-2xl shadow-lg text-center max-w-sm relative z-10">
+        <h1 class="animate-pop2 text-pink-500 text-4xl lg:text-4xl font-bold">
+            <p class="text-2xl pb-3">Many Many return of the day!</p>
+            <p id="SubjectName">Fatema Tuj Zhura Moumita</p>
             <img class="w-12" src="https://em-content.zobj.net/source/microsoft-teams/363/birthday-cake_1f382.png"
                 alt="">
         </h1>
