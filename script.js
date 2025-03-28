@@ -192,7 +192,7 @@ function Starter(){
   console.log(Starter)
 
 
-  let sec= 57;
+  let sec= 58;
   const timeID = setInterval(()=>{
     Time.innerHTML = `11 : 59 : ${sec++}`
   },1000);
@@ -235,7 +235,7 @@ function Starter(){
     },1000)
 
 
-  }, 4000);
+  }, 3000);
 
 }
 
